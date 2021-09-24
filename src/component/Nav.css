@@ -1,0 +1,80 @@
+/*==============================
+| | | |	 Content Box
+================================*/
+
+.content-box-lg {
+	padding-top: 60px;
+}
+
+/*==============================
+|	|	|	Navigation Bar
+================================*/
+
+header .container-fluid {
+	margin: 0 50px;
+}
+
+.navbar {
+	margin: 0;
+	padding: 20px 0;
+	-webkit-transition: all .3s linear;
+	transition: all .3s linear;
+	background-color: #fff;
+}
+.pull-right li:nth-child(1) a{
+    font-size: 36px;   
+}
+ul.navbar-nav > li a{
+	font-family: "Open Sans", sans-serif;
+	color: #333333;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 20px;
+	text-transform: capitalize;
+	margin: 0;
+	padding: 0;
+	margin-left: 30px;
+	display: inline-block;
+	text-decoration: none;
+}
+ul.navbar-nav > li a.item {
+	margin-top: 12px;
+}
+
+ul.navbar-nav > li a.item:hover,
+ul.navbar-nav > li a.item:focus {
+	background: none;
+	color: #6255a5;
+	padding-bottom: 5px;
+	border-bottom: 3px solid #6255a5;
+	-webkit-transition: all .3s linear;
+	transition: all .3s linear;
+}
+ul.navbar-nav > li:nth-child(1) a.item:hover,
+ul.navbar-nav > li:nth-child(1) a.item:focus {
+    border: none;
+    color: #333333;
+    font-size: 38px;
+    transition: all .3s ease-in-out;
+}
+ul.navbar-nav > li a.btn {
+	
+	background-color: #6255a5;
+	color: #fff;
+	border-radius: 3px;
+	border: none;
+	height: 40px;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 22px;
+	padding: auto; 
+	margin-left: 30px;
+	padding: 8px 10px;
+	text-transform: capitalize;
+} 
+
+ul.navbar-nav > li a.btn:focus,
+ul.navbar-nav > li a.btn:hover {
+	outline: none;
+	background-color: darkslateblue;
+}

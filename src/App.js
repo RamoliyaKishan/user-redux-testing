@@ -1,24 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import UserForm from './component/UserForm';
+import {BrowserRouter , Route , Switch} from 'react-router-dom'
+import UsersList from './component/UsersList';
+import Nav from './component/Nav';
+import Edit from './component/Edit';
+import {Provider} from 'react-redux'
+import store from './redux/store'
+
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+ 
+  <div className="App">
+    <Provider store={store}>
+      <BrowserRouter>
+
+        <Route component={Nav} />
+
+          <Switch>
+              <Route path="/" exact component={UsersList}></Route>
+              <Route path="/addUser" exact  component={UserForm}></Route>
+              <Route path="/usersList" exact component={UsersList}></Route>
+              <Route path="/edit/:id" exact component={Edit}></Route>
+          </Switch>
+        
+      </BrowserRouter>
+    </Provider>
+
+  </div>
+    
+    
   );
 }
 
